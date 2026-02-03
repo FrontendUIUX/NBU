@@ -1,0 +1,393 @@
+html,
+body {
+    text-align: left;
+}
+
+button.navbar-toggler {
+    right: 0;
+    left: auto;
+}
+.digital-stamp-card .digital-stamp-header h6 {
+    margin: 0px;
+    color: #161616;
+    font-size: 14px;
+    width: 92%;
+}
+footer .special-toggles div:not(:last-child),
+footer .socialIcons-footer a:not(:last-child),
+footer .Apps a:not(:last-child) {
+    margin-right: .6rem;
+}
+
+footer .sign span {
+    margin-right: auto;
+    margin-left: .6rem;
+}
+
+.footerQuicklinks a:last-child {
+    border: none;
+}
+
+.view-filters .views-exposed-form .form-actions .btn {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-level-0 .menu-item.menu-item--active-trail a::after {
+    right: unset;
+    left: 0;
+}
+
+.field--name-field-media img {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.node--type-nbu-page.node--view-mode-full .menu--main a:hover::after,
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item.menu-item--active-trail a.is-active::after {
+    left: 0rem;
+    right: auto;
+}
+
+.nbu-block-paragraph-item .field--name-field-nbu-image img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.table-responsive thead tr th:last-child {
+    text-align: left;
+}
+
+.menuHeader .icon {
+    left: auto;
+    right: 1rem;
+    scale: -1;
+}
+
+.footerQuicklinks a {
+    border-left: none;
+    border-right: 2px solid rgba(255, 255, 255, 0.46);
+}
+
+.footerQuicklinks a:first-child {
+    padding-left: 0px;
+    padding-right: 1rem;
+}
+
+.nbuToolbar .user {
+    border-left: 1px solid rgb(255 255 255 / 25%);
+}
+.searchbox-container{
+    top: 8.5rem;
+}
+@media (min-width:992px) {
+    .searchbox-container .search-box .close-search {
+        left: auto;
+        right: 4rem;
+    }
+    .digital-stamp-card .digital-stamp-header h6 {
+        width: unset;
+    }
+    header .navbar .navbar-nav .rightSectionTools li.nav-item {
+        width: fit-content;
+        white-space: nowrap;
+    }
+
+    header .navbar .navbar-brand {
+        padding: 0 1rem;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    header .navbar .search {
+        right: unset !important;
+    }
+}
+
+@media (max-width:992px) {
+    header .navbar .search {
+        right: 5rem !important;
+        left: auto !important;
+    }
+}
+
+header .navbar .mainmenu {
+    margin-right: 0;
+}
+
+section.mainMenu .logos img:first-child {
+    border-left: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.7rem .7rem 0.7rem 0rem;
+}
+
+.quicklaunchContainer {
+    left: -3.5rem;
+    right: auto;
+    animation: 1s fadeLeft forwards;
+
+}
+
+.quickLaunchItems a.item span {
+    padding: 0.8rem 1.7rem 0.8rem 4.7rem;
+}
+
+.quickLanchMenu svg.closeQuickLaunch {
+    left: 1.5rem;
+}
+
+.quickLanchMenu svg {
+    left: 1.6rem;
+}
+
+.vision-card-links-container {
+    left: auto;
+    right: 0;
+}
+
+.vision-card-title,
+.vision-card-paragraph {
+    text-align: left;
+}
+
+.nbuToolbar .tools .language span,
+.nbuToolbar .user span {
+    margin-left: .5rem;
+    margin-right: 0;
+}
+
+header .navbar .navbar-brand img.accreditedLogo {
+    border-left: 1px solid rgb(255, 255, 255, 0.3);
+    border-right: 0 !important;
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
+header.scroll .navbar .navbar-brand img.accreditedLogo,
+header.search-open .navbar .navbar-brand img.accreditedLogo,
+body:not(.path-frontpage) #page header .navbar .navbar-brand img.accreditedLogo {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+header .navbar .navbar-brand img {
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+.shortcutContainer {
+    left: -100%;
+    right: auto;
+}
+
+.shortcutContainer.visible {
+    left: -55%;
+    right: auto;
+}
+
+.shortcutContainer.visible .quickLaunchItems a.item:nth-child(1) {
+    transform: translateX(95%);
+}
+
+.shortcutContainer.visible .quickLaunchItems a.item:nth-child(2) {
+    transform: translateX(108%);
+}
+
+.shortcutContainer.visible .quickLaunchItems a.item:nth-child(3) {
+    transform: translateX(95%);
+}
+
+.accessibilityMenu {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 0;
+    left: -200%;
+    right: auto;
+}
+
+.accessibilityMenu.active {
+    opacity: 1;
+    left: 0;
+    right: auto;
+    z-index: 6;
+}
+
+.accessibilityMenu .closeMenu {
+    left: auto;
+    right: 2rem;
+}
+
+footer .copyrightSection .stamps img:first-child {
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+
+header.scroll .navbar .navbar-brand img.accreditedLogo,
+header.search-open .navbar .navbar-brand img.accreditedLogo {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none;
+}
+
+@media(max-width: 992px) {
+
+    header li.nav-item.dropdown button.dropdown-toggle::after,
+    header li.nav-item.dropdown.mega-menu .dropdown-menu .dpMenuContainer li a.dropdown-item::after {
+        content: "";
+        border: 0;
+        background-image: url("/themes/custom/nbu/images/svg/navArrowGreen.svg");
+        height: 0.7rem;
+        width: 0.7rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: left center;
+        right: 1rem !important;
+        left: auto !important;
+        top: 1.6rem;
+        position: absolute;
+        transform: rotate(90deg) !important;
+    }
+}
+
+@media (max-width:992px) {
+    .closeMenu {
+        left: auto !important;
+        right: 0 !important;
+    }
+}
+
+@media (max-width:568px) {
+    header {
+        top: 0rem !important;
+    }
+}
+
+.accessibilityMenu .menuBody .sectionsubTitle .icon {
+    margin-right: .7rem;
+    margin-left: 0;
+}
+
+.accessibilityMenu .menuBody .col-sm-6:nth-child(2n+1) {
+    padding-right: 0.5rem;
+    padding-left: 0;
+
+}
+
+.accessibilityMenu .menuBody .col-sm-6:nth-child(2n+2) {
+    padding-left: 0.5rem;
+    padding-right: 0;
+
+}
+
+footer .quickLinks,
+footer .uniSocialIcons,
+footer .downloadApp {
+    transform: translateX(100%);
+}
+
+section.mainMenu .col-lg-3 button.bg-transparent.border-0 svg {
+    transform: scaleX(-1);
+}
+
+section.mainMenu a.mobile-log-in .icon {
+    margin-right: 0.7rem;
+    margin-left: 0;
+    background-position: right;
+}
+
+section.mainMenu .closeMenu {
+    left: auto;
+    right: 0;
+}
+
+.ourVision .tab-pane .card .icon {
+    margin-right: .7rem;
+    margin-left: 0;
+}
+
+footer .copyrightSection .copyrightText {
+    transform: translateX(100%);
+}
+
+.languages-popup {
+    left: 1rem;
+    right: auto;
+}
+
+.languages-popup .languages-list a.language.active::before {
+    right: 1rem;
+    left: auto;
+}
+
+section.mainMenu a.mobile-log-in {
+    background-image: url("../media/eng.png");
+}
+.searchbox-container .search-box button,
+.searchbox-container .search-box .close-search {
+ 
+    margin: 0px 0rem 0px 1.2rem;
+    
+}
+@media(min-width:992px) {
+    .searchbox-container {
+        top: 7.8rem;
+    }
+
+    .digital-stamp-card .digital-stamp-header h6 {
+        width: unset;
+    }
+
+    header .navbar .navbar-nav .nav-item {
+        padding: 1.2rem 2.2rem 1.4rem 1.4rem;
+    }
+
+    header li.nav-item.dropdown button.dropdown-toggle::after {
+        left: auto;
+        right: .4rem;
+        margin: 0;
+    }
+
+    .accessibilityMenu .closeMenu {
+        right: -4rem;
+    }
+
+    .shortcutContainer.visible {
+        left: -14%;
+    }
+
+    header .navbar .search {
+
+        left: unset !important;
+
+        margin-left: 1rem;
+
+        display: none;
+    }
+
+    footer .uniSocialIcons {
+        margin-right: 2rem;
+        margin-left: 0;
+        width: auto;
+        padding-left: 0rem;
+        padding-right: 0;
+    }
+
+    footer h5.category::after {
+        left: 0;
+        right: auto;
+    }
+
+    .quicklanchContainer {
+        top: 52%;
+    }
+}
+
+@media(min-width:1200px) {
+    section.mainMenu .closeMenu {
+        left: auto;
+        right: 2rem;
+    }
+}

@@ -1,0 +1,197 @@
+.socialMediaIcons{
+    right: 0;
+    left: auto;
+}
+.heroBanner .slide .slideDescription{
+    right: 0;
+    left: auto;
+}
+.heroBanner .slide span::before{
+    transform: scaleX(-1);
+    left: -2rem;
+    right: auto;
+}
+.subtitle-design-class,
+.vision-main-title{
+    text-align:left;
+}
+.subtitle-design-class::before {
+    left:0;
+    right:auto;
+}
+.subtitle-design-class{
+   padding-left:1.5rem;
+    padding-right:0;
+}
+.vision-card-link-item-text{
+    text-align: left;
+}
+.heroBanner .slide h1,
+.heroBanner .slide h1 span {
+    transform: translateX(-100%);
+}
+
+.heroBanner .slide.slick-active.slick-current h1 {
+    animation: 1s fadeLeft forwards;
+}
+
+.heroBanner .slide.slick-active.slick-current h1 span:first-child {
+    animation: 1s fadeLeft .2s forwards;
+}
+
+.heroBanner .slide.slick-active.slick-current h1 span:last-child {
+    animation: 1s fadeLeft .5s forwards;
+}
+
+.heroBanner .waves {
+    transform: scaleX(-1);
+}
+
+.ourVision .imagesContainer .img-container:last-child {
+    left: 18rem;
+    right: auto;
+}
+.ourVision .tab-pane .card a.icon {
+    transform: scaleX(-1);
+}
+
+.openData .data-slide h2 div.icon {
+    margin-right: .6rem;
+    margin-left: 0;
+}
+.eservicesSection .tab-content .tab-pane .col-lg-3 .card .card-footer .icon {
+    margin-left: .5rem;
+    margin-right: 0;
+}
+
+.eservicesSection .tab-content .tab-pane .col-lg-3 .card .card-footer .icon img {
+    transform: scaleX(-1);
+}
+
+.ourVision .imagesContainer .img-container:first-child {
+    transform: translateX(-100%);
+}
+
+.latestNews .col-lg-4 .card .card-img-overlay span::before {
+    left: 0;
+    right: auto;
+}
+
+.latestNews .col-lg-4 .card .card-img-overlay {
+    border-radius: var(--bs-card-inner-border-radius);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    top: 58.1%;
+}
+
+.eservicesSection .tab-content .tab-pane .col-lg-3 .card .card-footer:hover a.startService .icon {
+    transform: translateX(.3rem);
+}
+.eservicesSection .topSection .sectionTitle,
+.academicPrograms .topSection h1, 
+.eservicesSection .topSection h1{
+    transform: translateX(-100%);
+}
+.academicPrograms .topSection p.description{
+    transform: translateX(100%);
+}
+.eservicesSection .slick-prev,
+.ourStoryContent .slick-prev {
+    right: auto;
+    left: 1rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.eservicesSection .slick-next svg,
+.ourStoryContent .slick-next svg {
+    transform: scaleX(1);
+}
+.eservicesSection .slick-prev svg,
+.ourStoryContent .slick-prev svg {
+    transform: scaleX(-1);
+}
+.eservicesSection .slick-next,
+.ourStoryContent .slick-next {
+    right: 1rem;
+    left: auto;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.eservicesSection .tab-pane.slick-active.slick-current{
+    left: 0!important;
+    right: auto!important;
+}
+.ourVision .tab-pane.active.show {
+    display: block;
+    opacity: 1 !important;
+    left: 0 !important;
+    right: auto!important;
+}
+.openData .slick-prev{
+    left: 1rem;
+    right: auto;
+}
+.openData .slick-prev svg{
+    transform: scaleX(1);
+}
+.openData .slick-next svg{
+    transform: scaleX(-1);
+}
+.openData .slick-next{
+    right: 1rem;
+    left: auto;
+}
+.openData .buttonContainerLeft{
+    background: linear-gradient(to right, #1d3d4d 60.92%, transparent);
+    left: 0;
+    right: auto;
+
+}
+.openData .buttonContainerRight{
+    background: linear-gradient(to left, #1d3d4d 60.92%, transparent);
+    left: auto;
+    right: 0;
+
+}
+@media(min-width:992px) {
+    .heroBanner .slide .slideDescription{
+ right: 5rem;
+ left: auto;
+}
+    .openData .data-slide div.icon {
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+    .ourStory {
+        padding-left: 4rem;
+        padding-right: 0;
+    }
+
+    .ourVision .tab-pane .card .icon {
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+    .openData .data-slide:not(:last-child) {
+        border-right: 1px solid rgb(255, 255, 255, 0.15);
+        border-left: 0;
+    }
+    .eservicesSection .nav-pills .nav-item .nav-link,
+    .ourStory .nav-pills .nav-item .nav-link {
+        padding: 0.7rem 1.4rem;
+    }
+}
+@media (min-width:1200px) {
+    .openData .slick-prev{
+        left: 4rem;
+        right: auto;
+    }
+    .openData .slick-next{
+        right: 4rem;
+        left: auto;
+    }
+    
+}

@@ -1,0 +1,384 @@
+.nbu-banner {
+	height:13rem;
+}
+.node--type-news .field--name-field-media img{
+ border-top-left-radius:1rem;
+ border-bottom-left-radius:1rem;
+}
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item:not(.menu-item--active-trail) a:not(.is-active):first-child:hover{
+ background-color:#e5e5e5;
+}
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item .dropdown-icon:hover{
+ background-color:#e5e5e5;
+ color:var(--green);
+}
+/* breadcrumb start */
+.has-page-tabs.use-banner .breadcrumb .active a{
+ color:#fff;
+}
+/* breadcrumb end */
+/**/
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item--active-trail.menu-item:hover>a{
+    color: white !important;
+}
+
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item:first-child a{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item:last-child a{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom:none;
+}
+
+.node--type-nbu-page.node--view-mode-full .menu .menu-level-1 .menu-item a{
+    border-radius: 0;
+}
+.node--type-nbu-page.node--view-mode-full .menu-level-1 .menu-item:not(.menu-item--active-trail):hover a{
+    background-color: #e3ece7 !important;
+}
+/**/
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item a{
+position:relative;
+}
+.node--type-nbu-page.node--view-mode-full .menu .menu-level-1 .menu-item a:hover::after  {
+   content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0rem;
+    width: 6px;
+    height: 30px;
+    background-color: #bccfc4;
+    border-radius: 1rem;
+}
+.node--type-nbu-page.node--view-mode-full .menu--main a:hover::after{
+ content:"";
+ position:absolute;
+ top:50%;
+ transform:translateY(-50%);
+ right:0rem;
+ width:6px;
+ height:30px;
+ background-color:rgb(128 128 128 / 40%);
+ border-radius:1rem;
+}
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-level-1 a:hover::after, 
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-level-2 a:hover::after{
+ content:unset;
+}
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item.menu-item--expanded.menu-item--active-trail a.is-active{
+ position:relative;
+}
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item  a.is-active:hover{
+ color:#fff!important;
+}
+.node--type-nbu-page.node--view-mode-full .menu--main .menu-item.menu-item--active-trail a.is-active::after{
+content:"";
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+right:0rem;
+width:6px;
+height:30px;
+background-color:rgb(255 255 255 / 50%);
+border-radius:1rem;
+}
+.nbu-block-paragraph-item .field--name-field-nbu-image img{
+ width:100%;
+}
+.pagination .page-item.active .page-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 2px;
+    background-color: var(--green);
+    border-radius: 5px;
+}
+.form-control {
+    box-shadow: none!important;
+    border-color: rgb(206, 212, 218)!important;
+}
+select.form-select{
+ position:absolute;
+ z-index:1;
+}
+.js-form-item.js-form-type-radio::after{
+ content:unset!important;
+}
+.js-form-item.js-form-type-textfield,
+.js-form-item.js-form-type-email,
+.js-form-item.js-form-type-textarea{
+    position: relative;
+}
+.js-form-item.js-form-type-textfield:after,
+.js-form-item.js-form-type-email:after,
+.js-form-item.js-form-type-textarea:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-color:var(--green);
+    width:100%;
+    scale:0;
+    height:2px;
+    transition:all .6s ease-in-out;
+}
+.js-form-item.active:after{
+    scale:1;
+}
+.block-system-main-block .block-content--type-nbu-tabs .tabs .tabs-wrapper li.active{
+ color:var(--green);
+ border-bottom:1px solid var(--green);
+}
+.has-page-tabs.use-banner #block-pagetitle{
+ margin-top:0;
+}
+.nbu-banner .nbu-banner-picture, .nbu-banner .nbu-banner-picture>div{
+ height:100%;
+}
+.field.field--name-field-integer.field--type-integer.field--label-hidden.field__item {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    margin-bottom: 0.7rem;
+}
+#chat-widget-container{
+ z-index:5!important;
+}
+.btn.btn-primary, .btn.button--primary, .btn.form-submit{
+color:#FFFFFF!important;
+}
+.field.field--name-node-title.field--type-ds.field--label-hidden.field__item h2{
+    font-size: 1.25rem;
+    line-height:1.875rem;
+    text-align:center;
+}
+.node.node--type-academic-calendar .field.field--name-node-title.field--type-ds.field--label-hidden.field__item h2{
+    text-align:unset;
+}
+.table-responsive thead tr th:last-child{
+    text-align:center;
+}
+.table-responsive thead tr th.views-field-academic-calendar-status-views-field{
+    text-align:unset;
+}
+table tbody tr:nth-of-type(even), .table tbody tr:nth-of-type(even){
+ background-color:#f5f5f6;
+}
+.btn.btn-primary, .btn.button--primary, .btn.form-submit{
+ font-size:1rem;
+ padding:.4rem .8rem;
+}
+a,a:after,.text-formatted p>a,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:after,
+.taxonomy-term--type-deanships.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a, 
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a,
+.taxonomy-term--type-deanships.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:after, 
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:after,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:after, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:after,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:after{
+    /* color:#0f6133; */
+    transition:var(--transition)!important;
+}
+.taxonomy-term--type-deanships.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a, 
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a{
+    border-bottom:2px solid var(--green);
+}
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:after{
+padding:0 .7rem;
+}
+.text-formatted .table-responsive  p>a{
+    text-decoration:none;
+}
+.text-formatted .table-responsive  p{
+    margin:0;
+}
+.text-formatted p>a{
+ text-decoration:underline;
+}
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:hover,
+.taxonomy-term--type-deanships.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:hover, 
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:hover,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:hover, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:hover,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:hover{
+ border-bottom:2px solid rgb(15 97 51 / 70%);
+}
+a:focus,a:focus:after,.text-formatted p>a:focus,
+.node--type-nbu-page.node--view-mode-full .menu--main .nav-item a:focus,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:focus,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:focus:after,
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:focus:after,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:focus:after, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:focus:after,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:focus:after{
+    color:rgb(15 97 51 / 85%);
+}
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:focus,
+.taxonomy-term--type-deanships.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:focus, 
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:focus,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:focus, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:focus,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:focus{
+ border-bottom:2px solid rgb(15 97 51 / 85%);
+}
+a:active,a:active:after,.text-formatted p>a:active,
+.node--type-nbu-page.node--view-mode-full .menu--main .nav-item a:active,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:active,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:active:after,
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:active:after,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:active:after, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:active:after,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:active:after
+{
+    color:rgb(15 97 51 / 75%);
+}
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:active,
+.taxonomy-term--type-deanships.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:active, 
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:active,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:active, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:active,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:active{
+ border-bottom:2px solid rgb(15 97 51 / 75%);
+}
+a:visited,a:visited:after,
+.node--type-nbu-page.node--view-mode-full .menu--main .nav-item a:visited,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:visited,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:visited:after,
+.taxonomy-term--type-centers.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:visited:after,
+.taxonomy-term--type-vice-rectorates.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:visited:after, 
+.taxonomy-term--type-departments.taxonomy-term--view-mode-small-left-teaser .group-right .field--name-taxonomy-term-link a:visited:after,
+.block-content--type-nbu-grid .field--name-field-nbu-paragraph .field--name-field-nbu-link a:visited:after{
+    color:#0e6434;
+}
+.view-filters .views-exposed-form .form-actions .btn {
+    padding: 0.76rem 1.7rem;
+}
+.block-profile-menu .menu-item--expanded .dropdown-menu,
+.block-university-subsite .menu-item--expanded .dropdown-menu,
+.dropdown .dropdown-menu{
+ padding:0;
+}
+.block-profile-menu .menu-item--expanded .dropdown-menu .dropdown-item,
+.block-university-subsite .menu-item--expanded .dropdown-menu .dropdown-item,
+.dropdown .dropdown-menu .dropdown-item{
+ padding: .5rem;
+ border-bottom: 1px solid rgb(0 0 0 /10%);
+ border-radius: 0;
+background-color:transparent;
+outline:none;
+}
+
+.block-profile-menu .menu-item--expanded .dropdown-menu .dropdown-item a,
+.block-university-subsite .menu-item--expanded .dropdown-menu .dropdown-item a,
+.dropdown .dropdown-menu .dropdown-item a{
+    padding:0;
+}
+.subsite-menu.navigation-bar .navbar-nav .nav-link{
+    color:#ffffff!important;
+}
+.view-id-events.view-display-id-events_archive .node--view-mode-small-left-teaser .field--name-field-date-range span:first-child{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+}
+.node--type-events.node--view-mode-small-left-teaser:hover .group-right .field--name-node-title a{
+    color:white!important;
+}
+.node--type-photo-gallery.node--view-mode-small-teaser .field--name-field-image img, 
+.node--type-photo-gallery.node--view-mode-large-teaser .field--name-field-image img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+ .node--type-nbu-page.node--view-mode-full .sidebarnav-menu > .block-menu .nav-item a.is-active, 
+.node--type-nbu-page.node--view-mode-full .sidebarnav-menu > .block-menu .nav-item a.active{
+     color:#ffffff!important;
+ }
+ .view-id-academic_calendar_statements.view-display-id-academic_calendar_statements .academic-calendar-status.in-past {
+    color: #535851;
+}
+.view-id-service_catalog.view-display-id-service_catalog_compiled .view-filters .fieldgroup .form-check-input:checked + .form-check-label {
+    color: var(--green);
+    border-bottom: 3px solid  var(--green);
+    padding: 1rem;
+}
+.view-id-service_catalog.view-display-id-service_catalog_compiled .view-filters .fieldgroup .form-item-section label{
+ border:3px solid transparent;
+}
+.view-id-service_catalog.view-display-id-service_catalog_compiled .view-filters .fieldgroup .form-item-section:hover label{
+
+   color:var(--green);
+}
+select.form-select option{
+    padding:.6rem .4rem; 
+    transition:var(--transition);
+}
+select.form-select option:hover{
+    background-color:#f8f8f8;
+}
+select.form-select option:checked{
+    background: var(--green);
+    color:#ffffff;
+}
+select.form-select{
+    box-shadow:none!important;
+}
+body:not(.path-frontpage) .has-page-tabs.use-banner {
+    top: 5.5rem!important;
+}
+@media(min-width:992px ){
+.nbu-banner {
+    margin-top: 3.4rem;
+}
+body:not(.path-frontpage) .has-page-tabs.use-banner {
+    top: 8.2rem!important;
+}
+        .eservicesSection .nav-pills .nav-item .nav-link.active, 
+    .ourStoryContent .nav-pills .nav-item .nav-link.active, 
+    .eservicesSection .nav-pills .nav-item .nav-link:hover, 
+    .ourStoryContent .nav-pills .nav-item .nav-link:hover {
+        background-color: var(--native_Blue);
+        color: white !important;
+    }
+    .nbu-block-paragraph-item .field--name-field-nbu-image img{
+     border-top-right-radius:1rem;
+     border-bottom-right-radius:1rem;
+    }
+    .media-center .block-content--type-nbu-grid .field--name-field-nbu-paragraph .block-teaser-left .body-wrapper{
+     border-top-left-radius:1rem;
+     border-bottom-left-radius:1rem;
+    }
+}
+@media(min-width:1200px){
+     h1.title, .title.h1, 
+    .user--view-mode-search-result.user--view-mode-search-result .field--name-field-text-1 a, 
+    .block-views-exposed-filter-blocksearch-search-page .form-item-keywords label {
+        font-size: 1.875rem;
+        line-height: 2rem;
+    }
+        h2, .h2, .view-program-content.view-display-id-block_2 .field-items .js-views-accordion-group-header, 
+    .view-id-faqs.view-display-id-faqs_landing .view-header, 
+    .view-id-colleges.view-display-id-all_colleges .js-views-accordion-group-header, 
+    .view-id-colleges.view-display-id-colleges_location .js-views-accordion-group-header, 
+    .view-id-colleges.view-display-id-all_colleges .ui-accordion-content .field-items .views-field-name-1, 
+    .view-id-colleges.view-display-id-colleges_location .ui-accordion-content .field-items .views-field-name-1, 
+    body:not(.layout-builder-on) .ui-front.ui-dialog .ui-dialog-title {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+}
+@media(min-width:1600px){
+    .has-page-tabs.use-banner{padding: 3vw 0;}
+}
