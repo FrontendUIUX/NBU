@@ -7,12 +7,14 @@ button.navbar-toggler {
     right: 0;
     left: auto;
 }
+
 .digital-stamp-card .digital-stamp-header h6 {
     margin: 0px;
     color: #161616;
     font-size: 14px;
     width: 92%;
 }
+
 footer .special-toggles div:not(:last-child),
 footer .socialIcons-footer a:not(:last-child),
 footer .Apps a:not(:last-child) {
@@ -83,17 +85,21 @@ footer .sign span {
 .nbuToolbar .user {
     border-left: 1px solid rgb(255 255 255 / 25%);
 }
-.searchbox-container{
+
+.searchbox-container {
     top: 8.5rem;
 }
+
 @media (min-width:992px) {
     .searchbox-container .search-box .close-search {
         left: auto;
         right: 4rem;
     }
+
     .digital-stamp-card .digital-stamp-header h6 {
         width: unset;
     }
+
     header .navbar .navbar-nav .rightSectionTools li.nav-item {
         width: fit-content;
         white-space: nowrap;
@@ -325,12 +331,14 @@ footer .copyrightSection .copyrightText {
 section.mainMenu a.mobile-log-in {
     background-image: url("../media/eng.png");
 }
+
 .searchbox-container .search-box button,
 .searchbox-container .search-box .close-search {
- 
+
     margin: 0px 0rem 0px 1.2rem;
-    
+
 }
+
 @media(min-width:992px) {
     .searchbox-container {
         top: 7.8rem;

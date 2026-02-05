@@ -28,7 +28,7 @@
     --medium:500;
     --semibold:600;
     --bold:700;
-    
+
     /* Neutral Colors - gray*/
     --colors-gray-25: #fcfcfd;
     --colors-gray-50: #f9fafb;
@@ -42,7 +42,6 @@
     --colors-gray-800: #1F2A37;
     --colors-gray-900: #111927;
     --colors-gray-950: #0D121C; 
-    
  
       /* Primary Colors - green*/
     --colors-brand-25: #f7fdf9;
@@ -72,7 +71,7 @@
     --colors-error-800: #912018;
     --colors-error-900: #7a271a;
     --colors-error-950: #55160c;
-    
+
     /* Warning Colors*/
     --colors-warning-25: #fffcf5;
     --colors-warning-50: #fffaeb;
@@ -116,7 +115,7 @@
     --colors-success-950: #053321;
  
    /* below  Note validated yet */
-    
+
     --gradient-gray-600-500-90deg: linear-gradient(90deg,var(--colors-gray-600) 0%,var(--colors-gray-500) 100%);
     --gradient-gray-700-600-45deg: linear-gradient(45deg,var(--colors-gray-700) 0%,var(--colors-gray-600) 100%);
     --gradient-gray-800-600-45deg: linear-gradient(45deg,var(--colors-gray-800) 0%,var(--colors-gray-600) 100%);
@@ -136,10 +135,10 @@
     
     --colors-text-primary: var(--colors-gray-950);
     --colors-text-primary_on-brand: var(--colors-base-white);
-    
+
     --colors-text-secondary: var(--colors-gray-700);
     --colors-text-secondary_on-brand: hsla(var(--colors-alpha-white)/70%);
-    
+
     --colors-text-tertiary: var(--colors-gray-600);
     --colors-text-quarterary: var(--colors-gray-500);
     --colors-text-white: var(--colors-base-white);
@@ -248,19 +247,284 @@
     --border-radius-full: 50%;
  
 }
+@font-face {
+    font-family: "ibmregular";
+    src: url("../fonts/ibmplex/ibmplexsansarabic-regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ibmbold";
+    src: url("../fonts/ibmplex/ibmplexsansarabic-bold.ttf") format("truetype");
+}
+
+.img2{
+    width: 20px fixed;
+    height: 14px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 9px;
+}
+
+.new{
+    font-weight: var(--medium);
+}
+
+.inside{
+    width: 1400px ;
+    height: 280px  ;
+    gap: 32px;
+}
+
+.heroTitle{
+    width: 775px;
+    height: 60px;
+    color:var(--colors-base-white);
+    text-align: right;
+    font-family: var(--ibmregular);
+    font-style: normal;
+    font-weight: var(--border-width);
+    letter-spacing: -0.96px;
+}
+.under{
+    width: 680px;
+    height: 80px;
+    color: var(--colors-base-white);
+    font-family: var(--ibmregular);
+    font-weight: var(--semibold);
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.btn-primary{
+    width: 82px;
+    height: 40px fixed;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    padding-right: 16px ;
+    padding-left: 16px ;
+    border-radius: 4px;
+    gap: 4px;
+    background-color: var(--colors-base-white);
+    font-weight: var(--bold);
+}
+
+.Numbers{
+    width: 1440px fixed;
+    height: 410px ;
+    top: 667px;
+    padding-top: var(--spacing-5xl);
+    padding-right: var(--spacing-8xl);
+    padding-bottom: var(--spacing-5xl);
+    padding-left: var(--spacing-8xl);
+    gap: var(--spacing-5xl);
+    background-color: var(--colors-base-white);
+}
+
+.size{
+    width: 1280px;
+    height: 330px;
+    gap: var(--spacing-5xl);
+}
+
+.subnumber{
+    width: 1280px;
+    height: 86px;
+    gap: var(--spacing-3xl);
+}
+
+.types{
+    width: 1280px;
+    height: 38px;
+    font-family: var(--ibmBold);
+    font-weight: var(--bold);
+    align-items:right;
+    font-size: 30px;
+    color: var(--text-default);
+}
+
+.type{
+    width: 778px;
+    height: 24px;
+    font-family: var(--ibmregular);
+    font-weight:var(--regular);
+    size: 16px;
+    color: var(--text-default);
+}
+
+.statistic{
+    width: 1248px;
+    height: 204px;
+    gap: var(--spacing-4xl);
+    display: flex;
+    flex-direction: row;
+}
+
+.Students{
+    width: 224px;
+    height: 204px;
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-xl);
+    gap: 24px;
+}
+
+.Students img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Fi{
+    width: 56px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 132px;
+    padding-left: 84px;
+    padding-right: 84px;
+}
+
+.student{
+    width: 192px;
+    height: 92px;
+    gap: 8px;
+}
+
+.NS{
+    font-weight: var(--regular) ;
+    size: 16px;
+    margin-right: 35px  ;
+    margin-top: 40px;
+}
+
+.N{
+    font-weight: var(--regular);
+    font-size: 48px;
+    color: var(--colors-brand-800) ;
+    margin-right: 50px;
+    margin-top:30px ;
+}
+
+.prom{
+    width: 224px;
+    height: 204px;
+    padding: var(--spacing-xl);
+    margin-top: -15px;
+}
+
+.prom img{
+    display: block;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.promo{
+    font-weight: var(--regular);
+    font-size: 48px;
+    color: var(--colors-brand-800) ;
+    margin-right: 15px;
+    margin-top:30px;
+}
+
+.Npromo{
+    font-weight: var(--regular);
+    size: 16px;
+    margin-right: 35px ;
+    margin-top: 40px;
+}
+
+.members{
+    width: 224px;
+    height: 204px;
+    padding: var(--spacing-xl);
+}
+
+.members img{
+    display: block;
+    margin-right: 50px;
+}
+
+.member{
+    font-weight: var(--regular);
+    font-size: 48px;
+    color: var(--colors-brand-800) ;
+    margin-right: 30px;
+    margin-top:30px;
+}
+
+.Nmember{
+    font-weight: var(--regular);
+    size: 16px;
+    margin-right: 25px ;
+    margin-top: 40px;
+}
+
+.employees{
+    width: 224px;
+    height: 204px;
+    padding: var(--spacing-xl);
+    margin-top: -10px;
+}
+.employees img{
+    display: block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.employee{
+    font-weight: var(--regular);
+    font-size: 48px;
+    color: var(--colors-brand-800) ;
+    margin-top:30px;
+}
+
+.Nemployee{
+    font-weight: var(--regular);
+    size: 16px;
+    margin-right: 0px ;
+    margin-top: 40px;
+}
+
+.Faculties{
+    width: 224px;
+    height: 204px;
+    margin-top: -10px;
+}
+
+.Faculties img{
+    display: block;
+    margin-top: 28px;
+}
+
+.faculty{
+    font-weight: var(--regular);
+    font-size: 48px;
+    color: var(--colors-brand-800) ;
+    margin-top:30px;
+    margin-right: 6px;
+}
+
+.Nfaculty{
+    font-weight: var(--regular);
+    size: 16px;
+    margin-top: 40px;
+    margin-right: -10px;
+}
+
 .custom-container, .custom-container-1260 {
     max-width: var(--container-max-width-desktop);
     display: flex;
-    margin-inline: auto;
+    padding-right: 30px ;
+    padding-left: 30px;
     width: 100%;
 }
 
 .stamp-container {
-    padding-top: var(--spacing-xs);
-    padding-bottom: var(--spacing-xs);
+    width: 100%;
+    padding-right: var(--spacing-4xl);
+    padding-left: var(--spacing-4xl);
     background: #f3f4f6;
     z-index: 5;
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .stamp-container .bg-otutline-border {
     border-radius: 9999px;
