@@ -29,7 +29,40 @@
     --scale-factor: 1;
     --appTitleFontFam: "IBM Bold";
 }
+@font-face {
+    font-family: "IBM Bold";
+    src: url("../fonts/ibmplex/IBMPlexSansArabic-Bold.ttf");
+}
 
+@font-face {
+    font-family: "IBM ExtraLight";
+    src: url("../fonts/ibmplex/IBMPlexSansArabic-ExtraLight");
+}
+
+@font-face {
+    font-family: "IBM Light";
+    src: url("../fonts/ibmplex/IBMPlexSansArabic-Light.ttf");
+}
+
+@font-face {
+    font-family: "IBM Medium";
+    src: url("../fonts/ibmplex/IBMPlexSansArabic-Medium.ttf");
+}
+
+@font-face {
+    font-family: "IBM Regular";
+    src: url("/themes/custom/nbu/fonts/ibmplex/IBMPlexSansArabic-Regular.ttf");
+}
+
+@font-face {
+    font-family: "IBM SemiBold";
+    src: url("../fonts/ibmplex/IBMPlexSansArabic-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "IBM Thin";
+    src: url("../fonts/ibmplex/IBMPlexSansArabic-Thin.ttf");
+}
 .rightSectionTools {
     display: none;
     width: 100%;
@@ -268,40 +301,7 @@ footer .text-increase.active svg:last-child {
     left: 0.2rem;
 }
 
-@font-face {
-    font-family: "IBM Bold";
-    src: url("../fonts/ibmplex/IBMPlexSansArabic-Bold.ttf");
-}
 
-@font-face {
-    font-family: "IBM ExtraLight";
-    src: url("../fonts/ibmplex/IBMPlexSansArabic-ExtraLight");
-}
-
-@font-face {
-    font-family: "IBM Light";
-    src: url("../fonts/ibmplex/IBMPlexSansArabic-Light.ttf");
-}
-
-@font-face {
-    font-family: "IBM Medium";
-    src: url("../fonts/ibmplex/IBMPlexSansArabic-Medium.ttf");
-}
-
-@font-face {
-    font-family: "IBM Regular";
-    src: url("../fonts/ibmplex/IBMPlexSansArabic-Regular.ttf");
-}
-
-@font-face {
-    font-family: "IBM SemiBold";
-    src: url("../fonts/ibmplex/IBMPlexSansArabic-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: "IBM Thin";
-    src: url("../fonts/ibmplex/IBMPlexSansArabic-Thin.ttf");
-}
 
 body:not(.path-frontpage) .navbar-toggler svg path {
     stroke: #333;
