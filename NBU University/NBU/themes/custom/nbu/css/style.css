@@ -31,10 +31,21 @@
 }
 
 .rightSectionTools {
-    display: none;
-    width: 100%;
-    position: relative;
-    left: -40% ;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.logo,
+.nav-links {
+    display: flex;
+    align-items: center;
 }
 
 .subsitebanner img {
@@ -180,6 +191,130 @@
         margin-right: 0px;
 
     }
+
+    /* --- Top Section Mobile Styles --- */
+    .stamp-container {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 8px 8px !important;
+        gap: 8px;
+    }
+
+    .custom-container {
+        padding: 0 2rem !important;
+        width: 100% !important;
+    }
+
+    .stamp--inn {
+        flex-direction: column !important;
+        gap: 8px;
+        margin-block: 16px !important;
+    }
+
+    .stamp-text {
+        flex-direction: column !important;
+        gap: 8px;
+        margin-block: 16px !important;
+    }
+
+    .stamp-text--inn {
+        flex-direction: row !important;
+        margin-bottom: 8px !important;
+    }
+
+    .stamp-link.custom-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 4px;
+        margin-top: 8px !important;
+    }
+
+    .stamp-link-text {
+        margin-inline-start: 0 !important;
+        margin-top: 4px !important;
+    }
+
+    .stamp-container img,
+    .stamp-container svg {
+        max-width: 32px;
+        height: auto;
+    }
+
+    .stamp-container .text-content1,
+    .stamp-container .text-content {
+        font-size: 14px !important;
+    }
+
+    .stamp-container .head-domain-ar,
+    .stamp-container .https-container {
+        font-size: 15px !important;
+    }
+
+    /* Header/Navbar/Logo */
+    header .custom-container {
+        padding: 0 8px !important;
+        width: 100% !important;
+    }
+
+    header .navbar .navbar-brand {
+        width: 11.7rem !important;
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+
+    header .navbar .navbar-brand img,
+    header .navbar .navbar-brand .universityLogo {
+        max-width: 100%;
+        height: auto !important;
+        width: 100% !important;
+        object-fit: contain;
+    }
+
+    .navbar-toggler {
+        margin-right: 10rem !important;
+        z-index: 10 !important;
+    }
+
+    .navbar-collapse {
+        width: 100% !important;
+    }
+
+    .topSectionMenu {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+    }
+
+    .menuHeader {
+        font-size: 1.1rem !important;
+    }
+
+    .closeMenu {
+        top: 8px !important;
+        right: 8px !important;
+    }
+
+    /* Reduce padding/margin for nav items */
+    .navbar-nav>* {
+        margin: 0 0 8px 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Hide desktop-only elements if any */
+    .d-lg-block {
+        display: none !important;
+    }
+
+    .d-lg-none {
+        display: block !important;
+    }
+
+    .accessibility-trigger{
+        position: relative;
+        right: 0.5rem;
+    }
+
+    
 }
 
 @media(min-width:992px) {
@@ -203,8 +338,10 @@
     }
 
     header .navbar-collapse .navbar-nav .topSectionMenu {
-        align-items: center;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .digital-stamp-card {
@@ -385,10 +522,9 @@ header li.nav-item.dropdown {
 }
 
 .closeMenu {
-    height: 5rem;
-    width: 4.2rem;
+    height: 2rem;
+    width: 2rem;
     border: none;
-    padding: 1rem;
     position: absolute;
     left: 0rem;
     top: 0rem;
@@ -407,7 +543,6 @@ header li.nav-item.dropdown.mega-menu .dropdown-menu .dpMenuContainer {
 
 .headElement {
     display: flex;
-    align-items: center;
     padding: 1.7rem 1rem;
     background-color: rgb(247, 247, 247);
 }
@@ -519,7 +654,6 @@ header .navbar-collapse .navbar-nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
 }
 
 header .navbar-collapse .navbar-nav .topSectionMenu {
@@ -534,12 +668,9 @@ ul {
 .navbar-toggler {
     padding: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0;
+    align-items: left;
+    justify-content: left;
     z-index: 0;
-    transition: none;
 }
 
 .navbar-toggler svg {
@@ -1922,6 +2053,7 @@ footer .copyrightSection .copyrightText {
 
 .accessibilityTools .accessibility {
     padding: 1rem;
+    right: 3rem;
     width: 20%;
 }
 
@@ -2031,8 +2163,28 @@ form.searchbox-container.scroll.container {
     top: 5.7rem;
 }
 
-.searchbox-container.show {
-    display: flex;
+
+@media (max-width: 991.98px) {
+    .searchbox-container.show {
+        display: flex !important;
+    }
+
+    .navbar-toggler {
+        width: 5px;
+        height: 50px;
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        position: relative;
+    }
+
+    .search.bg-transparent {
+        position: relative;
+        z-index: 11;
+        margin-left: -4rem;
+    }
 }
 
 .searchbox-container .search-box {
@@ -2461,7 +2613,7 @@ header li.nav-item.dropdown .dropdown-menu.show .dpMenuContainer a:hover {
     header .navbar .navbar-nav .topSectionMenu>ul {
         display: flex;
         margin-bottom: 0;
-        align-items: center;
+        align-items: left;
     }
 
     header.scroll .universityLogo.coloredLogo,
@@ -2761,3 +2913,4 @@ header li.nav-item.dropdown .dropdown-menu.show .dpMenuContainer a:hover {
         width: 100%;
     }
 }
+

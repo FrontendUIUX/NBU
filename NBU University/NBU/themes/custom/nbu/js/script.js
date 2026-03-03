@@ -436,3 +436,91 @@ jQuery(document).ready(function (jQuery) {
     event.stopPropagation();
   });
 });
+
+function changeTab(element) {
+    // 1. Enlever la classe 'active' de tous les items
+    document.querySelectorAll('.tab-item').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    // 2. Ajouter la classe 'active' sur l'élément cliqué
+    element.classList.add('active');
+}
+
+function currentSlide(index) {
+    // 1. Récupérer tous les points
+    const dots = document.querySelectorAll('.dot');
+    
+    // 2. Retirer la classe 'active' de tous les points
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // 3. Ajouter la classe 'active' uniquement sur celui cliqué
+    dots[index].classList.add('active');
+  }
+
+
+  const counters = document.querySelectorAll('.counter');
+const speed = 100; // Plus le chiffre est petit, plus l'animation est rapide
+
+const startCounter = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-target');
+            const updateCount = () => {
+                const count = +counter.innerText;
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+            observer.unobserve(counter); // On arrête d'observer une fois l'animation finie
+        }
+    });
+};
+
+const observer = new IntersectionObserver(startCounter, { threshold: 0.5 });
+counters.forEach(counter => observer.observe(counter));
+
+
+
+function changeTab(element, sectionId) {
+    // 1. Remove 'active' class from all tabs
+    let tabs = document.querySelectorAll('.tab-item');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    // 2. Add 'active' class to the clicked tab
+    element.classList.add('active');
+    
+    // 3. Hide all content sections
+    let contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => content.style.display = 'none');
+    
+    // 4. Show the specific section clicked
+    document.getElementById(sectionId).style.display = 'block';
+}
+
+
+
+function currentSlide(index) {
+    // 1. Récupérer le rail et les points
+    const track = document.querySelector('.slider-track');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (track) {
+        // 2. MOUVEMENT : On déplace le rail de 100% pour chaque index
+        // En mode RTL, un index de 1 (2ème point) déplace le rail de +100% vers la gauche
+        const moveAmount = index * 100;
+        track.style.transform = `translateX(${moveAmount}%)`;
+    }
+    
+    // 3. APPARENCE : Votre logique actuelle pour les points
+    dots.forEach(dot => dot.classList.remove('active'));
+    if (dots[index]) {
+        dots[index].classList.add('active');
+    }
+}

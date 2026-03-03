@@ -225,3 +225,88 @@
     }
 
 }
+
+/* --- CORRECTIF MOBILE SPÉCIAL NBU --- */
+@media screen and (max-width: 991px) {
+
+    /* 1. RÉPARER LA BANNIÈRE (HERO) */
+    .heroBanner {
+        height: auto !important;
+        /* Laisse la hauteur s'adapter au contenu */
+        min-height: auto !important;
+        padding-bottom: 2rem;
+    }
+
+    .heroBanner .slick-track,
+    .heroBanner .slick-list,
+    .heroBanner .slide {
+        height: auto !important;
+        /* Casse la hauteur forcée par JS */
+    }
+
+    /* Transforme l'image de fond pour qu'elle ne soit plus absolue */
+    .heroBanner .card-img-top img {
+        position: relative !important;
+        height: 250px !important;
+        /* Hauteur fixe pour l'image seulement */
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Le texte passe EN DESSOUS de l'image (fond blanc ou gris) */
+    .heroBanner .slide .card-img-overlay {
+        position: relative !important;
+        background-color: #fff;
+        /* Fond pour lire le texte */
+        color: #000 !important;
+        /* Texte en noir pour contraste */
+        padding: 1.5rem !important;
+        width: 100% !important;
+        right: 0 !important;
+        left: 0 !important;
+    }
+
+    /* Force la couleur noire sur les textes qui étaient blancs */
+    .heroBanner .slide h1,
+    .heroBanner .slide span,
+    .heroBanner .slide .slideDescription {
+        color: #161616 !important;
+        text-align: right;
+        /* Garder l'alignement arabe */
+    }
+
+    /* 2. RÉPARER LES CARTES (Academic Programs) */
+    /* Transforme la grille complexe en liste verticale simple */
+    .academicPrograms .gridLayout {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .academicPrograms .gridLayout .card {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    /* Rendre le texte des cartes lisible (plus de vw) */
+    .academicPrograms .gridLayout .card-img-overlay h5.card-title {
+        font-size: 18px !important;
+        position: relative;
+        /* Sécurité */
+    }
+
+    /* 3. RÉPARER LES STATISTIQUES (Open Data) */
+    .openData .d-flex {
+        flex-direction: column;
+    }
+
+    .openData .data-slide {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .openData .data-slide h2 span {
+        font-size: 2.5rem !important;
+        /* Chiffres bien gros */
+    }
+}
